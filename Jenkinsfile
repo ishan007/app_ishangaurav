@@ -37,6 +37,10 @@ pipeline {
                 echo '--------------- SONARQUBE ANALYSIS STAGE FINISHED ----------------'
             }
         }
+
+        stage('Deploy'){
+            
+        }
         
     }
 
