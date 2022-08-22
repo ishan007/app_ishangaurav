@@ -20,6 +20,14 @@ pipeline {
             }
         }
 
+        stage('Test case execution'){
+            steps{
+                echo '---------- TEST CASE EXECUTION STAGE STARTED --------------'
+                sh 'npm test'
+                echo '---------- TEST CASE EXECUTION STAGE FINISHED --------------'
+            }
+        }
+
         stage('Sonarqube Analysis'){
             steps{
                 echo '--------------- SONARQUBE ANALYSIS STAGE STARTED ----------------'
