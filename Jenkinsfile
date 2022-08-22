@@ -2,6 +2,10 @@ pipeline {
 
     agent any
 
+    environmet{
+        scannerHome = tool 'SonarQubeScanner'
+    }
+
     tools{
         nodejs 'nodejs'
     }
@@ -11,10 +15,18 @@ pipeline {
         stage('Build'){
             steps{
                 echo '---------- BUILD STAGE STARTED --------------'
-                sh 'npm --version'
-                sh 'node --version'
                 sh 'npm install'
                 echo '---------- BUILD STAGE FINISHED --------------'                
+            }
+        }
+
+        stage('Sonarqube Analysis'){
+            steps{
+                echo '--------------- SONARQUBE ANALYSIS STAGE STARTED ----------------'
+                withSonarQubeEnv('Test_Sonar'){
+                    sh '${scannerHome}/bin/sonar-scanner'
+                }
+                echo '--------------- SONARQUBE ANALYSIS STAGE FINISHED ----------------'
             }
         }
         
