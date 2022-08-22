@@ -10,8 +10,11 @@ pipeline {
 
         stage('Build'){
             steps{
+                echo '---------- BUILD STAGE STARTED --------------'
                 sh 'npm --version'
-                sh 'npm install'                
+                sh 'node --version'
+                sh 'npm install'
+                echo '---------- BUILD STAGE FINISHED --------------'                
             }
         }
         
