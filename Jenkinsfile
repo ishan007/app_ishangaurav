@@ -4,7 +4,7 @@ pipeline {
 
     environment{
         scannerHome = tool 'SonarQubeScanner'
-        branchName = env.BRANCH_NAME
+        branchName = 'env.BRANCH_NAME'
     }
 
     tools{
@@ -23,7 +23,7 @@ pipeline {
 
         stage('Test case execution'){
             when{
-                branchName = 'master'
+                branchName 'master'
             }
 
             steps{
@@ -35,7 +35,7 @@ pipeline {
 
         stage('Sonarqube Analysis'){
             when{
-                branchName = 'develop'
+                branchName 'develop'
             }
 
             steps{
