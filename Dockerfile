@@ -3,6 +3,8 @@
 FROM node:16.17.0
 ENV NODE_ENV=production
 
+RUN apt-get update
+
 WORKDIR /app
 
 COPY ["package.json", "package-lock.json*", "./"]
