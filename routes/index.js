@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render("index", { title: "Express", env: process.env });
+  res.render("index", { title: "Hello NAGP World!", env: process.env });
 });
 
 module.exports = router;

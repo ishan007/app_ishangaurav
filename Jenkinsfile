@@ -49,7 +49,10 @@ pipeline {
         stage('Kubernetes Deployment'){
             steps{
                 echo '---------- KUBERNETES DEPLOYMENT STAGE STARTED --------------'
-                
+                sh 'kubectl apply -f kubernetes/configmap.yaml'
+                sh 'kubectl apply -f kubernetes/secrets.yaml'
+                sh 'kubectl apply -f kubernetes/deployment.yaml'
+                sh 'kubectl apply -f kubernetes/service.yaml'
                 echo '---------- KUBERNETES DEPLOYMENT STAGE FINISHED --------------'
             }
         }
