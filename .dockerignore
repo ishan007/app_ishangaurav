@@ -1,0 +1,11 @@
+#Ignore the coverage report
+coverage
+
+#Ignoring nyc output
+.nyc_output
+
+#Ignoring git 
+.git
+
+#Ignoring readme
+*.md
