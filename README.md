@@ -1,4 +1,4 @@
-# node-app
+# Node-app
 
 * **[Repository](https://github.com/ishan007/app_ishangaurav)**
 * **[Dockerfile](https://github.com/ishan007/app_ishangaurav/blob/master/Dockerfile)**
