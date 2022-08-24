@@ -1,9 +1,9 @@
 # node-app
 
-* **[Dockerfile:](https://github.com/ishan007/app_ishangaurav)**
-* **[Dockerfile:](https://github.com/ishan007/app_ishangaurav/blob/master/Dockerfile)**
-* **[Jenkinsfile:](https://github.com/ishan007/app_ishangaurav/blob/master/Jenkinsfile)**
-* **[Kubernetes yaml files:](https://github.com/ishan007/app_ishangaurav/tree/master/kubernetes)**
+* **[Repository](https://github.com/ishan007/app_ishangaurav)**
+* **[Dockerfile](https://github.com/ishan007/app_ishangaurav/blob/master/Dockerfile)**
+* **[Jenkinsfile](https://github.com/ishan007/app_ishangaurav/blob/master/Jenkinsfile)**
+* **[Kubernetes yaml files](https://github.com/ishan007/app_ishangaurav/tree/master/kubernetes)**
 
 # Commands
 
